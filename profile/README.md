@@ -11,3 +11,4 @@ The Global Security Database (GSD) is an open-source project focused on making c
 - Website: https://gsd.id
 - Database: https://github.com/cloudsecurityalliance/gsd-database
 - Tools and other files: https://github.com/cloudsecurityalliance/gsd-tools
+- How to contribute / use GSD: https://gsd.id/getting-started

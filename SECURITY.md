@@ -43,8 +43,9 @@ This policy covers all software and services hosted under the `CloudSecurityAlli
 GitHub organization.
 
 For security issues related to CSA web properties (e.g., cloudsecurityalliance.org)
-or other non-GitHub concerns, see
-[cloudsecurityalliance.org/security](https://cloudsecurityalliance.org/security).
+or other non-GitHub concerns, see CSA's
+[security.txt](https://cloudsecurityalliance.org/.well-known/security.txt)
+(RFC 9116).
 
 ## Safe Harbor
 

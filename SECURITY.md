@@ -10,8 +10,9 @@ If you discover a security vulnerability in any software hosted under the
 2. Click **"Report a vulnerability"**
 3. Fill out the form with details about the vulnerability
 
-GitHub accounts are free. This is the only method for reporting vulnerabilities
-in CSA software on GitHub.
+GitHub accounts are free. This is the method for reporting vulnerabilities
+in public repositories in the `CloudSecurityAlliance` GitHub organization.
+For private repositories, see the SECURITY.md within that repository.
 
 ## Why Private Vulnerability Reporting
 
@@ -54,5 +55,5 @@ this policy, CSA will not pursue legal action against you.
 
 ## More Information
 
-For full details on CSA's product security program, policies, and product inventory, see
+For full details on CSA's product security program and policies, see
 [github.com/CloudSecurityAlliance/csa-product-security](https://github.com/CloudSecurityAlliance/csa-product-security).

@@ -1,59 +1,40 @@
 # Security Policy
 
-## Reporting a Security Vulnerability
-
-If you discover a security vulnerability in any software hosted under the
-`CloudSecurityAlliance` GitHub organization, please report it through
-**GitHub's Private Vulnerability Reporting (PVR)**:
-
-1. Go to the **Security** tab of the affected repository
-2. Click **"Report a vulnerability"**
-3. Fill out the form with details about the vulnerability
-
-GitHub accounts are free. This is the method for reporting vulnerabilities
-in public repositories in the `CloudSecurityAlliance` GitHub organization.
-For private repositories, see the SECURITY.md within that repository.
-
-## Why Private Vulnerability Reporting
-
-We use GitHub's built-in Private Vulnerability Reporting because it provides a
-standardized, integrated workflow for receiving, triaging, and publishing security
-advisories. CSA uses the GitHub-recommended security configuration with no
-customizations applied.
-
-## What to Include
-
-- Description of the vulnerability
-- Steps to reproduce
-- Affected versions or components (if known)
-- Impact assessment (if known)
-- Any proof-of-concept code
-
-## What to Expect
-
-- CSA will acknowledge and triage your report
-- Our default is to publish advisories openly and quickly — we treat public
-  disclosure as the norm, not the exception. Advisories will only remain private
-  temporarily if there is a specific reason to delay
-- GitHub automatically credits your GitHub account on the published advisory
-- CSA is a nonprofit — we do not offer bug bounties
+The Cloud Security Alliance (CSA) documents its full product security program in the [`csa-product-security`](https://github.com/CloudSecurityAlliance/csa-product-security) repository. The guidance below summarizes how to report potential vulnerabilities.
 
 ## Scope
 
-This policy covers all software and services hosted under the `CloudSecurityAlliance`
-GitHub organization.
+- **Websites and services** such as `cloudsecurityalliance.org`, `csachapter.io`, `star.watch`, `webfinger.io`, hosted portals, and first-party APIs.
+- **Software** in the `CloudSecurityAlliance` GitHub organization, including MCP servers/clients, SDKs, and extensions.
+- **AI prompts and instructions** published by CSA, whether embedded in MCP artifacts or distributed separately.
 
-For security issues related to CSA web properties (e.g., cloudsecurityalliance.org)
-or other non-GitHub concerns, see CSA's
-[security.txt](https://cloudsecurityalliance.org/.well-known/security.txt)
-(RFC 9116).
+General model-behavior research without a CSA artifact, third-party platforms, or upstream dependencies we do not control are out of scope. See the [Vulnerability Disclosure Policy](https://github.com/CloudSecurityAlliance/csa-product-security/blob/main/docs/vulnerability-disclosure-policy.md#out-of-scope) for details.
 
-## Safe Harbor
+## How to report
 
-CSA supports responsible security research. If you act in good faith and follow
-this policy, CSA will not pursue legal action against you.
+- **GitHub Private Vulnerability Reporting (preferred for software or repo-hosted AI artifacts):** Open the repository’s **Security** tab, select **Report a vulnerability**, and provide reproduction steps, impact, and affected versions. Reports stay private until we publish an advisory, and GitHub credits the reporter automatically. GitHub login required.
+- **Email `security@cloudsecurityalliance.org`** (for websites/services, AI content published outside GitHub, or if you prefer not to use PVR). Include reproduction steps, impact, affected assets, and credit preference. Anonymous or pseudonymous reports and PGP-encrypted messages are accepted.
 
-## More Information
+## Service levels and disclosure
 
-For full details on CSA's product security program and policies, see
-[github.com/CloudSecurityAlliance/csa-product-security](https://github.com/CloudSecurityAlliance/csa-product-security).
+CSA follows coordinated disclosure with explicit timelines:
+
+- Acknowledge every report within **5 business days**.
+- Provide substantive status updates at least every **30 days** while a case is open.
+- Target remediation or public disclosure within **90 days** of acknowledgment unless we mutually agree on a different schedule.
+
+We default to publishing advisories openly through GitHub as soon as practical, even if a fix is still in progress. See the [SLA commitments](https://github.com/CloudSecurityAlliance/csa-product-security/blob/main/docs/sla-commitments.md) and [governance framework](https://github.com/CloudSecurityAlliance/csa-product-security/blob/main/docs/governance-framework.md) for the canonical definitions.
+
+## Safe harbor
+
+CSA supports good-faith security research. If you respect this policy, avoid unnecessary service disruption, and give us a reasonable chance to remediate before disclosure, we will not pursue legal action. Keep exploitation to the minimum required to demonstrate impact and do not access, modify, or exfiltrate data beyond what is necessary to prove the issue.
+
+## Need more detail?
+
+The complete governance model, handling process, and severity expectations live in `csa-product-security/docs/`. Start with:
+
+- [Vulnerability Disclosure Policy](https://github.com/CloudSecurityAlliance/csa-product-security/blob/main/docs/vulnerability-disclosure-policy.md)
+- [Vulnerability Handling Process](https://github.com/CloudSecurityAlliance/csa-product-security/blob/main/docs/vulnerability-handling-process.md)
+- [Severity Classification](https://github.com/CloudSecurityAlliance/csa-product-security/blob/main/docs/severity-classification.md)
+
+Copy this SECURITY.md into the `.github` repository to apply it organization-wide; individual repos can override it if they have unique requirements.
